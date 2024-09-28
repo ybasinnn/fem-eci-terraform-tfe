@@ -21,6 +21,10 @@ locals {
       project_id = module.project["fem-eci-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-github"
     }
+
+    
+
+
     "fem-eci-aws-network" = {
       description         = "Automation for AWS network resources."
       execution_mode      = "remote"
@@ -67,7 +71,9 @@ locals {
         {
           category = "terraform"
           key      = "name"
+          value    = "fem-eci-ybasinnnn"
           value    = "fem-eci-ybasinnn"
+
         },
         {
           category = "terraform"
