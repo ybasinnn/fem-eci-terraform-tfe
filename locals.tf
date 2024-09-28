@@ -13,12 +13,18 @@ locals {
 
     }
     "fem-eci-github" = {
+      description         = "Example automation workspace for Github resources"
+      execution_mode      = "remote"
+      project_id          = module.project["fem-eci-project"].id
       description = "Example automation workspace for Github resources"
-      execution_mode = "remote"
+      execution_mode = "local"
       project_id = module.project["fem-eci-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-github"
     }
+
     
+
+
     "fem-eci-aws-network" = {
       description         = "Automation for AWS network resources."
       execution_mode      = "remote"
@@ -66,6 +72,8 @@ locals {
           category = "terraform"
           key      = "name"
           value    = "fem-eci-ybasinnnn"
+          value    = "fem-eci-ybasinnn"
+
         },
         {
           category = "terraform"
