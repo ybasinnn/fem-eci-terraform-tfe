@@ -77,9 +77,3 @@ locals {
       ]
     }
   }
-<<<<<<< HEAD
-}
-#
-=======
-}
->>>>>>> parent of 08e92e6 (feat: make github sync)
