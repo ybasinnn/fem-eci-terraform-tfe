@@ -16,6 +16,9 @@ locals {
       description         = "Example automation workspace for Github resources"
       execution_mode      = "remote"
       project_id          = module.project["fem-eci-project"].id
+      description = "Example automation workspace for Github resources"
+      execution_mode = "local"
+      project_id = module.project["fem-eci-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/fem-eci-terraform-github"
     }
     "fem-eci-aws-network" = {
@@ -74,5 +77,9 @@ locals {
       ]
     }
   }
+<<<<<<< HEAD
 }
 #
+=======
+}
+>>>>>>> parent of 08e92e6 (feat: make github sync)
