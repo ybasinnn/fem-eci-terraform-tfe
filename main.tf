@@ -19,6 +19,7 @@ module "workspace" {
   name              = each.key
   organization_name = var.organization_name
   project_id        = each.value.project_id
+  variables         = try(each.value.variables, [])
 
 
   vcs_repo = {
