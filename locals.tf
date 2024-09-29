@@ -71,7 +71,6 @@ locals {
         {
           category = "terraform"
           key      = "name"
-          value    = "fem-eci-ybasinnnn"
           value    = "fem-eci-ybasinnn"
 
         },
