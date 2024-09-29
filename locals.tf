@@ -51,7 +51,7 @@ locals {
       ]
     }
 
-    "fem-eci-aws-cluster-prod" = {
+    "fem-eci-aws-cluster" = {
       description         = "Automation for AWS cluster resources."
       execution_mode      = "remote"
       project_id          = module.project["fem-eci-project"].id
